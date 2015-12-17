@@ -1,0 +1,12 @@
+input{
+  width: 100%;
+  border: 1px solid $lightgrey;
+  padding: 10px 5px 10px 5px;
+  font-size: 14px;
+  color: $text;
+  border-radius: 3px;
+  &:focus{
+    outline: 0px;
+    border-color: lighten($blue, 40%);
+  }
+}

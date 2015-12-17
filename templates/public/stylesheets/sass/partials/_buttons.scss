@@ -1,0 +1,35 @@
+button{
+  border: 0;
+}
+
+.btn{
+
+  &.default{
+    @include button(white, $blue, 16px, bold);
+  }
+
+  &.primary{
+    @include button($blue, white, 16px, bold);
+  }
+
+  &.success{
+    @include button($green, white, 16px, bold);
+  }
+
+  &.info{
+    @include button($lightgrey, $text, 16px, bold);
+  }
+
+  &.warning{
+    @include button($orange, white, 16px, bold);
+  }
+
+  &.danger{
+    @include button($red, white, 16px, bold);
+  }
+
+  &.wow{
+    @include button($beige, white, 16px, bold);
+  }
+
+}

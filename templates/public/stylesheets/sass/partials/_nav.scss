@@ -1,0 +1,53 @@
+#nav{
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  left: -200px;
+  top: 0;
+  transition: all 0.2s linear;
+  background-color: $title;
+  padding-top: 44px;
+
+  @include susy-breakpoint($medium){
+    width: 100%;
+    left: -100%;
+  }
+
+  @include susy-breakpoint($small){
+    width: 100%;
+    left: -100%;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      margin: 0;
+      left: 0;
+      display: block;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      &:first-child{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      a{
+        margin: 0;
+        display: block;
+        width: 100%;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        transition: all 0.2s linear;
+        &:hover{
+          background-color: lighten($title, 15%);
+        }
+      }
+    }
+  }
+  
+  &.show{
+    left: 0;
+  }
+}
