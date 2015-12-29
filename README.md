@@ -13,11 +13,13 @@ Install `slush`
 Install `slush-akakit` globally:
 
 ```bash
-$ npm install -g git+ssh://git@git.infra.kreactive.eu:digischool.component.web/slush-akakit.git
+$ npm install -g git@git.infra.kreactive.eu:digischool.component.web/slush-akakit.git
 ```
 
 ## Update slush-akakit
-$ npm install -g git+ssh://git@git.infra.kreactive.eu:digischool.component.web/slush-akakit.git
+```bash
+$ npm install -g git@git.infra.kreactive.eu:digischool.component.web/slush-akakit.git
+```
 ### Usage
 
 Create a new folder for your project:
