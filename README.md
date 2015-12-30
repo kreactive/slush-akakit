@@ -17,9 +17,9 @@ $ npm install -g git@git.infra.kreactive.eu:digischool.component.web/slush-akaki
 ```
 
 ## Update slush-akakit
-
-    $ npm install -g git@git.infra.kreactive.eu:digischool.component.web/slush-akakit.git
-
+```bash
+$ npm install -g git@git.infra.kreactive.eu:digischool.component.web/slush-akakit.git
+```
 ### Usage
 
 Create a new folder for your project:
@@ -56,4 +56,4 @@ Slush is a tool that uses Gulp for project scaffolding.
 
 Slush does not contain anything "out of the box", except the ability to locate installed slush generators and to run them with liftoff.
 
-To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).	
+To find out more about Slush, check out the [documentation](https://github.com/slushjs/slush).
