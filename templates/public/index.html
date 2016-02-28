@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Akakit</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <style>
+        xmp{
+            padding: 0 10px 0 10px;
+            background-color: rgba(242, 242, 242, 0.8);
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <div class="nav">
+        <img src="images/nav.png" alt="" width="30px" class="nav-img" onclick="akakitNav()"/>
+    </div>
+    <div class="container center">
+        <div class="s-12">
+            <h1 class="white">Akakit</h1>
+        </div>
+    </div>
+</header>
+
+<nav id="nav">
+    <ul>
+        <li><a href="#grid">Grille css</a></li>
+        <li><a href="#responsive">Responsive utilities</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#modal">Modal</a></li>
+        <li><a href="#check_mail">Check Mail</a></li>
+        <li><a href="#checkbox">Checkbox</a></li>
+        <li><a href="#radio">Radio</a></li>
+
+    </ul>
+</nav>
+
+<section id="home">
+
+    <div class="page container">
+        <div class="s-10 o-1 hide-offset-small">
+
+            <div class="step" id="grid">
+                <h2>Grille css</h2>
+                <div class="s-12">.<span>s-12</span></div>
+                <div class="s-6 m-6 l-6">.<span>s-6</span>.<span>m-6</span>.<span>l-6</span></div>
+                <div class="s-6 m-6 l-6">.<span>s-6</span>.<span>m-6</span>.<span>l-6</span></div>
+                <div class="s-12 m-6 l-6 o-3 h-o-s">.<span>s-12</span>.<span>m-6</span>.<span>l-6</span>.<span>o-3</span>.<span>h-o-s</span></div>
+                <article class="clear"></article>
+                <div class="m-3 l-3 s-6">.<span>m-3</span>.<span>l-3</span>.<span>s-6</span></div>
+                <div class="m-3 l-3 s-6">.<span>m-3</span>.<span>l-3</span>.<span>s-6</span></div>
+                <div class="m-3 l-3 s-6">.<span>m-3</span>.<span>l-3</span>.<span>s-6</span></div>
+                <div class="m-3 l-3 s-6">.<span>m-3</span>.<span>l-3</span>.<span>s-6</span></div>
+                <article class="clear"></article>
+
+                <xmp>
+<div class="s-12">.s-12</div>
+<div class="s-6 m-6 l-6">.s-6.m-6.l-6</div>
+<div class="s-6 m-6 l-6">.s-6.m-6.l-6</div>
+<div class="s-12 m-6 l-6 o-3 h-o-s">.s-12.m-6.l-6.o-3.h-o-s</div>
+<div class="m-3 l-3 s-6">.m-3.l-3.s-6</div>
+<div class="m-3 l-3 s-6">.m-3.l-3.s-6</div>
+<div class="m-3 l-3 s-6">.m-3.l-3.s-6</div>
+<div class="m-3 l-3 s-6">.m-3.l-3.s-6</div>
+                </xmp>
+
+                <ul>
+                    <li>
+                        <strong>s-(n)</strong> est disponible pour tout les formats si il n'y a pas d'autre taille spécifié <strong><i>"l-(n), m-(n))"</i></strong>
+                    </li>
+                    <li>
+                        <strong>m-(n)</strong> et <strong>l-(n)</strong> sont wrapper dans des medias query et donc disponible uniquement dans leur tailles respective,
+                        par exemple <strong>.m-(n)</strong> est inactive en <i>large</i> et <i>small</i>
+                    </li>
+                    <li>
+                        Offset : <strong>o-(n)</strong> va déplacer une div de (n) block par la gauche, est disponible pour toutes les tailles
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="responsive" class="step">
+                <h2>Responsive utilities</h2>
+                <ul>
+                    <li>
+                        <strong>.h-o-s, .h-o-m, .h-o-s</strong> => hide offset for small, medium, large. Si non spécifié l'offset sera disponible pour toute les tailles
+                    </li>
+                    <li>
+                        <strong>.h-s, .h-m, .h-l</strong> => hide for small, medium, large.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="step" id="buttons">
+                <h2>Buttons</h2>
+                <button class="btn default">Default</button>
+                <div class="btn info">Info</div>
+                <button class="btn primary">Primary</button>
+                <button class="btn success">Success</button>
+                <button class="btn warning">Warning</button>
+                <button class="btn danger">Danger</button>
+                <button class="btn wow">wow</button>
+
+                <xmp>
+<button class="btn default">Default</button>
+<div class="btn info">Info</div>
+<button class="btn primary">Primary</button>
+<button class="btn success">Success</button>
+<button class="btn warning">Warning</button>
+<button class="btn danger">Danger</button>
+<button class="btn wow">wow</button>
+                </xmp>
+
+                <p>
+                    Les même class que bootstrap...
+                </p>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="modal center" id="test-modal">
+                <h3>Shibe of the year</h3>
+                <img src="images/doge.jpeg" alt="" width="200"/>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut beatae eos maiores minima, molestias nemo perferendis rerum. Beatae exercitationem laudantium, officia praesentium quae quas qui. Molestias, placeat, voluptates. Unde.
+                </p>
+                <div class="btn default" onCLick="akakitModal('test-modal')">Fermer</div>
+            </div>
+
+            <div id="modal-overlay"></div>
+
+            <div id="modal" class="step">
+                <h2>Modal</h2>
+                <p>
+                    La modal prend en compte l'id de la modal et une fonction js. <br/>
+                    A vous de voir si vous voulez laisser l'event dans l'html ou le déplacé dans votre fichier .js.
+                </p>
+                <button class="btn primary" onCLick="akakitModal('test-modal')">Start</button>
+                <xmp>
+<div class="modal center" id="test-modal">
+    <h3>Shibe of the year</h3>
+    <img src="images/doge.jpeg" alt="" width="200"/>
+    <p>
+        Lorem...
+    </p>
+    <div class="btn default" onCLick="akakitModal('test-modal')">Fermer</div>
+</div>
+
+<button class="btn primary" onCLick="akakitModal('test-modal')">Start</button>
+                </xmp>
+
+
+                <p>
+                    La modal est basic, niveau js on a que quelques lignes :
+                </p>
+
+                <xmp>
+
+akakitModal = (id) => {
+    var modal = document.getElementById(id).classList;
+    var overlay = document.getElementsByClassName('modal-overlay')[0];
+
+    overlay.onclick = () => {
+        overlay.classList.remove('active');
+        modal.remove('active');
+    };
+
+    if(modal.contains("active")){
+        overlay.classList.remove('active');
+        modal.remove('active');
+    }else{
+        overlay.classList.add('active');
+        modal.add('active');
+    }
+};
+                </xmp>
+
+
+            </div>
+
+            <div class="step" id="check_mail">
+                <h2>Check mail</h2>
+                <input type="text" id="mail" />
+                <button class="btn primary" onClick="akaCheckMail()">Such security</button>
+
+                <xmp>
+<input type="text" id="mail" />
+<button class="btn primary" onClick="akaCheckMail()">Envoyer</button>
+                </xmp>
+            </div>
+
+            <div class="step" id="checkbox">
+                <h2>Checkbox utils</h2>
+
+                <label><strong>Couleurs</strong></label> <br/>
+                red
+                <input type="checkbox" name="color" value="red"/>
+                blue
+                <input type="checkbox" name="color" value="blue"/>
+                orange
+                <input type="checkbox" name="color" value="orange"/>
+                <br/><br/>
+                <button class="btn primary" onClick="akaCheckbox('color')">Get checkbox values</button>
+
+                <xmp>
+<label>Couleurs</label>
+red
+<input type="checkbox" name="color" value="red"/>
+blue
+<input type="checkbox" name="color" value="blue"/>
+orange
+<input type="checkbox" name="color" value="orange"/>
+<button class="btn primary" onClick="akaCheckbox('color')">Get checkbox values</button>
+                </xmp>
+            </div>
+
+            <div class="step" id="radio">
+                <h2>Radio utils</h2>
+                <label><strong>Couleurs</strong></label>
+                <br/>
+                red
+                <input type="radio" name="color" value="red"/>
+                blue
+                <input type="radio" name="color" value="blue"/>
+                orange
+                <input type="radio" name="color" value="orange"/>
+                <br/><br/>
+                <button class="btn primary" onClick="akaRadio('color')">Get checkbox values</button>
+
+                <xmp>
+<label>Couleurs</label>
+red
+<input type="radio" name="color" value="red"/>
+blue
+<input type="radio" name="color" value="blue"/>
+orange
+<input type="radio" name="color" value="orange"/>
+<button class="btn primary" onClick="akaRadio('color')">Get checkbox values</button>
+                </xmp>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<footer id="footer">
+    <img src="images/doge.jpeg" width="20" alt="" style="position:relative;top: 5px;margin-right: 7px;border-radius: 50%"/>There is no need to be upset
+</footer>
+
+<script src="javascripts/app.js"></script>
+
+</body>
+</html>
