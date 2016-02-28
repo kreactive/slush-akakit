@@ -1,8 +1,8 @@
 /*
- * slush-slush-suchkit
- * https://github.com/snail/slush-slush-suchkit
+ * slush-akakit
+ * https://github.com/snail/slush-suchkit
  *
- * Copyright (c) 2015, Adrien
+ * Copyright (c) 2015, Kreactive
  * Licensed under the MIT license.
  */
 

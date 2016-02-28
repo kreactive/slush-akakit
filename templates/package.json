@@ -1,7 +1,7 @@
 {
-  "name": "slush-akakit",
-  "version": "0.0.1",
-  "description": "akakit template for slush",
+  "name": "<%= appName %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,23 +10,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://git.infra.kreactive.eu/digischool.component.web/slush-akakit"
+    "url": "git+ssh://git@github.com/<%= userName %>/<%= appName %>.git"
   },
   "keywords": [
     "slushgenerator"
   ],
-  "author": "Adrien Espel",
+  "author": "<%= authorName %> <<%= authorEmail %>>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/snailterror/slush-suchkit/issues"
+    "url": "https://github.com/<%= userName %>/<%= appName %>/issues"
   },
-  "homepage": "https://github.com/snailterror/slush-suchkit#readme",
+  "homepage": "https://github.com/<%= userName %>/<%= appName %>#readme",
   "devDependencies": {
     "babelify": "^7.2.0",
     "babel-cli": "^6.1.4",
     "babel-core": "^6.1.2",
     "babel-preset-es2015": "^6.1.4",
-    "babel-preset-react": "^6.1.18",
     "babel-preset-stage-0": "^6.1.18",
     "browser-sync": "^2.8.2",
     "browserify": "^10.2.4",
